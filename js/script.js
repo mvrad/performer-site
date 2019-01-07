@@ -9,16 +9,15 @@ $(() => {
   });
   // Photo slider
   $(".slider-nav").slick({
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
-    dots: false,
     focusOnSelect: true,
     autoplay: true,
+    arrows: true,
     centerMode: true,
-    arrows: false,
     infinite: true,
-    dots: true,
+    dots: false,
     autoplaySpeed: 3000
   });
   $(".slider-for").slick({
