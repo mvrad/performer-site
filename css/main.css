@@ -866,6 +866,10 @@ figcaption {
           border-radius: 4px;
 }
 
+.training-wrapper {
+  width: 100%;
+}
+
 .training-col {
   width: auto;
   display: flex;
@@ -877,14 +881,22 @@ figcaption {
 .training-row {
   width: auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
 }
 
 .training-col p {
-  font-size: .9em;
+  font-size: .8em;
+}
+
+.left {
+  width: 275px;
+}
+
+.mid {
+  width: 235px;
 }
 
 /*==============================================================================
@@ -1076,7 +1088,7 @@ Breakpoints
   }
 
   .two-column-flex li p {
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   /* Social media link hover animation */
