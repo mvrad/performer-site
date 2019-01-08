@@ -119,8 +119,7 @@ h2 {
 h3 {
   font-size: 1.9em;
   font-weight: 700;
-  margin: 0 0 20px;
-  padding-top: 50px;
+  margin: 40px 0;
 }
 
 h4 {
@@ -289,6 +288,10 @@ Dropdown Menu
 Main
 ==============================================================================*/
 
+.item-1 {
+  display: none;
+}
+
 .two-column-flex img {
   display: none;
 }
@@ -392,7 +395,8 @@ Main
 }
 
 #videos {
-  border-top: solid 1px #000; 
+  border-top: solid 1px #000;
+  padding-top: 40px;
 }
 
 .video-container iframe {
@@ -871,11 +875,11 @@ figcaption {
 }
 
 .training-col {
-  width: auto;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-content: center;
+  margin-left: 40px;
 }
 
 .training-row {
@@ -892,11 +896,24 @@ figcaption {
 }
 
 .left {
-  width: 275px;
+  width: 300px;
 }
 
 .mid {
   width: 235px;
+}
+
+.left, .mid, .right {
+  margin-top: 20px;
+}
+
+.training-wrapper h3 {
+  margin-bottom: 20px;
+}
+
+#index-photos {
+  text-align: center;
+  margin: 40px auto;
 }
 
 /*==============================================================================
@@ -1055,12 +1072,13 @@ Breakpoints
 
   .box {
     font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
+    font-size: .95em;
     font-weight: 700;
     text-transform: uppercase;
     flex-grow: 1;
   }
   .box a {
+    text-align: center;
     color: #808080;
   }
 
@@ -1070,12 +1088,13 @@ Breakpoints
 
   .two-column-flex img {
     display: block;
-    width: auto;
+    width: 600px;
     height: auto;
-    margin: 50px 0 0 0;
+    margin: 40px 0;
   }
 
   .item-1 {
+    display: block;
     flex-shrink: 0; /* Keeps photo the same size */
   }
 
@@ -1087,8 +1106,13 @@ Breakpoints
     max-width: 800px;
   }
 
-  .two-column-flex li p {
-    margin-left: 10px;
+  #about-text {
+    width: 75%;
+    margin: 40px auto;
+  }
+
+  #shows-img {
+    width: 760px;
   }
 
   /* Social media link hover animation */
