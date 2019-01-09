@@ -1115,6 +1115,10 @@ Breakpoints
     width: 760px;
   }
 
+  #shows-text {
+    margin: 0 40px;
+  }
+
   /* Social media link hover animation */
 
   .social-links span {
