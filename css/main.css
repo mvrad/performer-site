@@ -892,15 +892,15 @@ figcaption {
 }
 
 .training-col p {
-  font-size: .8em;
+  font-size: .9em;
 }
 
 .left {
-  width: 300px;
+  width: 285px;
 }
 
 .mid {
-  width: 235px;
+  width: 245px;
 }
 
 .left, .mid, .right {
