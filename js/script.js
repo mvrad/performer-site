@@ -10,15 +10,24 @@ $(() => {
   // Photo slider
   $(".slider-nav").slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     asNavFor: ".slider-for",
     focusOnSelect: true,
     autoplay: true,
     arrows: true,
     centerMode: true,
+    centerPadding: '100px',
     infinite: true,
-    dots: false,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false
+        }
+      }
+    ],
   });
   $(".slider-for").slick({
     slidesToShow: 1,
