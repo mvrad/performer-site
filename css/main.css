@@ -395,10 +395,10 @@ Main
   margin: 0;
 }
 
-#videos {
+.videos {
   border-top: solid 1px #000;
   padding-top: 40px;
-  width: 640px;
+  max-width: 640px;
   margin: 40px auto;
 }
 
@@ -418,7 +418,7 @@ Main
   padding: 0;
 }
 
-.video-container figcaption p:not(:last-child):not {
+.video-container figcaption p:not(:last-child) {
   margin: 0;
   padding: 0 0 30px 0;
 }
@@ -427,13 +427,18 @@ figcaption p {
   padding-top: 40px;
 }
 
+.video-container img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
 #podcasts {
   border-bottom: solid 1px #000;
 }
 
 #last-caption {
   border-bottom: none;
-  padding: 0;
   margin-bottom: 80px;
 }
 
