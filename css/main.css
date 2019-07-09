@@ -45,6 +45,10 @@ audio, canvas, iframe, img, svg, video {
 Containers
 ==============================================================================*/
 
+body {
+  margin: 0 40px;
+}
+
 #mobile-profile-img {
   display: block;
   margin: 20px auto;
@@ -55,8 +59,57 @@ Containers
 }
 
 #mobile-header {
-  margin: 0 20px;
   border-bottom: solid 2px #000;
+}
+
+#mobile-header-main,
+#tablet-header-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-header-main {
+  margin-top: 40px;
+}
+
+#tablet-header-main {
+  margin-top: 60px;
+}
+
+#desktop-header-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box1 {
+  flex-grow: 5;
+}
+
+#mobile-header-logo img,
+#tablet-header-logo img,
+#desktop-header-logo img {
+  width: 82px;
+  height: auto;
+}
+
+#mobile-header-name,
+#tablet-header-name,
+#desktop-header-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+#mobile-header-content {
   text-align: center;
 }
 
@@ -64,18 +117,14 @@ Containers
   display: none;
 }
 
-.main-container {
-  margin: 0 20px;
-}
-
 .two-column-flex {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
-  margin: 0 40px;
-  padding: 0;
-  list-style: none;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*==============================================================================
@@ -95,24 +144,23 @@ Header
 ==============================================================================*/
 
 h1, h2, h3, h4 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-sans-serif;
 }
 
-h1, h2, h3 {
+h1, h3 {
   text-align: center;
 }
 
 h1 {
   color: #000;
-  font-size: 2.3em;
+  font-size: 1.5em;
   font-weight: 900;
-  margin-top: 60px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h2 {
   color: #000;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
   margin: 0;
 }
@@ -132,19 +180,14 @@ h4 {
 }
 
 p {
-  font-family: 'Raleway', serif;
-  margin: 0;
-  padding: 0;
-  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
   text-align: left;
+  line-height: 1.5;
 }
 
 .italic {
   font-style: italic;
-}
-
-.underline {
-  text-decoration: underline;
 }
 
 .bold {
@@ -182,7 +225,7 @@ Dropdown Menu
   height: 24px;
   display: inline-block;
   position: relative;
-  margin-bottom: 36px;
+  margin: 40px 0;
 }
 
 .hamburger-inner {
@@ -275,7 +318,7 @@ Dropdown Menu
   color: #000;
   margin: 10px auto;
   padding: 10px 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-sans-serif;
   font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
@@ -283,6 +326,11 @@ Dropdown Menu
 
 .show {
   display: block;
+}
+
+a:link, a:visited, a:hover, a:active {
+  font-weight: 700;
+  color: #000;
 }
 
 /*==============================================================================
@@ -355,7 +403,7 @@ Main
 }
 
 .rg-caption p{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-sans-serif;
   font-size: 1em;
   letter-spacing: 2px;
   line-height: 16px;
@@ -384,9 +432,8 @@ Main
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 20px;
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
 .video-container figure {
@@ -445,16 +492,18 @@ figcaption p {
 #copyright {
   margin-top: 50px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .slick-slider {
-  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .slider-nav {
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 25px;
 }
 
 figcaption {
@@ -503,13 +552,14 @@ figcaption {
 
 #ajax-contact input:focus,
 #ajax-contact textarea:focus {
-  background-color: beige;
+  background-color: #ffffd3;
   border-color: #1e90ff;
   transition: border-color .4s ease, background-color .4s ease;
 }
 
 #ajax-contact input[type="submit"],
 #ajax-contact input[type="reset"] {
+  font-family: "Lato", sans-serif;
   background: #007f3f;
   color: #fff;
   width: 120px;
@@ -531,8 +581,9 @@ figcaption {
 }
 
 #ajax-contact label {
-  font-family: "Raleway", serif;
-  font-size: 1.125em;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
   text-align: left;
   padding: 0;
 }
@@ -542,7 +593,7 @@ figcaption {
 }
 
 .success {
-  font-family: "Raleway", serif;
+  font-family: "Lato", sans-serif;
   width: 250px;
   padding: 1em;
   margin: 0 auto;
@@ -555,7 +606,7 @@ figcaption {
 }
 
 .error {
-  font-family: "Raleway", serif;
+  font-family: "Lato", sans-serif;
   width: 250px;
   padding: 1em;
   margin: 0 auto;
@@ -608,9 +659,12 @@ figcaption {
   margin-bottom: 20px;
 }
 
-#index-photos {
+#index-photo-mobile {
   text-align: center;
-  margin: 40px auto;
+}
+
+#index-photo {
+  display: none;
 }
 
 /*==============================================================================
@@ -632,13 +686,18 @@ Breakpoints
     display: none;
   }
 
+  #index-photo {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+  }
+
   #tablet-header {
     display: block;
   }
 
   h1 {
-    font-size: 2.5rem;
-    margin-top: 40px;
+    font-size: 2.2rem;
     padding: 0;
   }
 
@@ -653,26 +712,26 @@ Breakpoints
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin: 40px 40px 0 40px;
+    margin-top: 40px;
     padding: 0 0 40px 0;
     border-bottom: solid 2px #a9a9a9;
   }
 
   .flex-container1 a {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Lato', sans-sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #808080;
     padding: 0 15px 0 15px;
   }
 
-  .main-container {
-    margin: 0 40px;
-  }
-
   #desktop-welcome-gallery {
     display: block;
+  }
+
+  #desktop-welcome-gallery img {
+    width: 100%;
+    max-width: 1200px;
   }
 
   .welcome-gallery {
@@ -680,7 +739,6 @@ Breakpoints
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin: 0 20px 40px;
     padding: 0;
     list-style: none;
   }
@@ -718,21 +776,17 @@ Breakpoints
 
   figcaption {
     display: block;
-    font-family: 'Lato', serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Lato', sans-serif;
     font-size: 1.1em;
     text-align: center;
     width: 640px;
+    padding: 0;
+    margin: 0 auto;
   }
 
 }
 
 @media (min-width: 1024px) {
-
-  .slick-slider {
-    width: 640px;
-  }
 
   #tablet-header {
     display: none;
@@ -740,18 +794,14 @@ Breakpoints
 
   #desktop-header {
     display: block;
-    margin: 0 40px;
-    padding-bottom: 40px;
+    max-width: 1200px;
     border-bottom: solid 2px #a9a9a9;
+    margin: 0 auto;
   }
 
   h1 {
     margin: 0;
     padding: 0;
-  }
-
-  h2 {
-    margin-top: -15px;
   }
 
   .flex-container2 {
@@ -760,20 +810,21 @@ Breakpoints
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding-bottom: 40px;
     margin-top: 40px;
-    padding: 0;
-  }
-
-  .box1 {
-    flex-grow: 5;
   }
 
   .box {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-sans-serif;
     font-size: .95em;
     font-weight: 700;
     text-transform: uppercase;
-    flex-grow: 1;
+  }
+  .box:not(:last-child) {
+    margin: 0 20px;
+  }
+  .box:last-child {
+    margin-left: 20px;
   }
   .box a {
     text-align: center;
@@ -797,6 +848,7 @@ Breakpoints
   }
 
   .item-2 {
+    max-width: 1200px;
     flex-shrink: 1; /* Shrinks the text */
   }
 
@@ -805,8 +857,7 @@ Breakpoints
   }
 
   #about-text {
-    width: 75%;
-    margin: 40px auto;
+    margin-left: 40px;
   }
 
   #shows-img {

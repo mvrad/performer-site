@@ -3,13 +3,13 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100016596-4"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100016596-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-100016596-4');
+    gtag('config', 'UA-100016596-2');
   </script>
 
   <!-- Meta Data -->
@@ -19,13 +19,15 @@
   <meta name="author" content="Matthew Conrad">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- FavIcons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png?v=5APrJOYlRk">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png?v=5APrJOYlRk">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png?v=5APrJOYlRk">
+  <link rel="manifest" href="img/favicon/site.webmanifest?v=5APrJOYlRk">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg?v=5APrJOYlRk" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico?v=5APrJOYlRk">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml?v=5APrJOYlRk">
   <meta name="theme-color" content="#ffffff">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kelly Conrad | Performer</title>
 
   <!-- Links/Stylesheets -->
@@ -40,27 +42,44 @@
   <header>
     <!-- Mobile Header -->
     <nav id="mobile-header">
-      <h1>Kelly Conrad</h1>
-      <h2>Performer</h2>
-      <img id="mobile-profile-img" src="img/home-1-mobile.jpg" alt="Kelly Conrad | Performer">
-      <button class="hamburger hamburger--squeeze navigation" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      <ul id="myDropdown" class="dropdown-content">
-        <li><a href="about#about">About</a></li>
-        <li><a href="media#photos">Media</a></li>
-        <li><a href="resume#resume">Résumé</a></li>
-        <li><a href="shows#shows">Shows</a></li>
-        <li><a href="instructor#instructor">Instructor</a></li>        
-        <li><a href="contact#contact">Contact</a></li>
-      </ul>
-      </button>
+      <div id="mobile-header-main">
+        <div id="mobile-header-logo">
+          <img src="img/logo.svg"></img>
+        </div>
+        <div id="mobile-header-name">
+          <h1>Kelly Conrad</h1>
+          <h2>Performer</h2>
+        </div>
+      </div>
+      <div id="mobile-header-content">
+        <img id="mobile-profile-img" src="img/home-1-mobile.jpg" alt="Kelly Conrad | Performer">
+        <p id="index-photo-mobile">Photo: Harrison Scantling</p>
+        <button class="hamburger hamburger--squeeze navigation" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        <ul id="myDropdown" class="dropdown-content">
+          <li><a href="about#about">About</a></li>
+          <li><a href="media#photos">Media</a></li>
+          <li><a href="resume#resume">Résumé</a></li>
+          <li><a href="shows#shows">Shows</a></li>
+          <li><a href="instructor#instructor">Instructor</a></li>        
+          <li><a href="contact#contact">Contact</a></li>
+        </ul>
+        </button>
+      </div>
     </nav>
     <!-- Tablet Header -->
     <nav id="tablet-header">
-      <h1>Kelly Conrad</h1>
-      <h2>Performer</h2>
+      <div id="tablet-header-main">
+        <div id="tablet-header-logo">
+          <img src="img/logo.svg"></img>
+        </div>
+        <div id="tablet-header-name">
+          <h1>Kelly Conrad</h1>
+          <h2>Performer</h2>
+        </div>
+      </div>
       <ul class="flex-container1">
         <li><a href="about">About</a></li>
         <li><a href="media">Media</a></li>
@@ -73,13 +92,25 @@
     <!-- Desktop Header -->
     <nav id="desktop-header">
       <ul class="flex-container2">
-        <li class="box1"><a href="https://www.kjconrad.com"><h1>Kelly Conrad</h1><br><h2>Performer</h2></a></li>
+        <li class="box1">
+          <a href="https://www.kjconrad.com">
+            <div id="desktop-header-main">
+              <div id="desktop-header-logo">
+                <img src="img/logo.svg"></img>
+              </div>
+              <div id="desktop-header-name">
+                <h1>Kelly Conrad</h1>
+                <h2>Performer</h2>
+              </div>
+            </div> 
+          </a>
+        </li>
         <li class="box"><a href="about">About</a></li>
         <li class="box"><a href="media">Media</a></li>
         <li class="box"><a href="resume">Résumé</a></li>
         <li class="box"><a href="shows">Shows</a></li>
         <li class="box"><a href="instructor">Instructor</a></li>        
-        <li class="box"><a href="contact">Contact</a></li>
+        <li class="box last-box"><a href="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -181,7 +212,7 @@
           <img src="img/evesdropping.jpg" alt="Evesdropping Podcast">
           <figcaption>
             <p id="last-caption">
-              Hear Kelly and other Philly performers geek out about the show “Killing Eve” on the Podcast <span class="underline"><a href="http://woodercooler.com/category/podcasts/evesdropping" target="_blank">Evesdropping</a></span>. Also available on iTunes, Spotify, Alexa, and Stitcher.
+              Hear Kelly and other Philly performers geek out about the show “Killing Eve” on the Podcast <a href="http://woodercooler.com/category/podcasts/evesdropping" target="_blank">Evesdropping</a>. Also available on iTunes, Spotify, Alexa, and Stitcher.
             </p>
           </figcaption>
         </figure>

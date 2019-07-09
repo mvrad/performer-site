@@ -3,13 +3,13 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100016596-4"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100016596-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-100016596-4');
+    gtag('config', 'UA-100016596-2');
   </script>
 
   <!-- Meta Data -->
@@ -19,13 +19,15 @@
   <meta name="author" content="Matthew Conrad">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- FavIcons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png?v=5APrJOYlRk">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png?v=5APrJOYlRk">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png?v=5APrJOYlRk">
+  <link rel="manifest" href="img/favicon/site.webmanifest?v=5APrJOYlRk">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg?v=5APrJOYlRk" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico?v=5APrJOYlRk">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml?v=5APrJOYlRk">
   <meta name="theme-color" content="#ffffff">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kelly Conrad | Performer</title>
 
   <!-- Links/Stylesheets -->
@@ -40,27 +42,44 @@
   <header>
     <!-- Mobile Header -->
     <nav id="mobile-header">
-      <h1>Kelly Conrad</h1>
-      <h2>Performer</h2>
-      <img id="mobile-profile-img" src="img/home-1-mobile.jpg" alt="Kelly Conrad | Performer">
-      <button class="hamburger hamburger--squeeze navigation" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      <ul id="myDropdown" class="dropdown-content">
-        <li><a href="about#about">About</a></li>
-        <li><a href="media#photos">Media</a></li>
-        <li><a href="resume#resume">Résumé</a></li>
-        <li><a href="shows#shows">Shows</a></li>
-        <li><a href="instructor#instructor">Instructor</a></li>        
-        <li><a href="contact#contact">Contact</a></li>
-      </ul>
-      </button>
+      <div id="mobile-header-main">
+        <div id="mobile-header-logo">
+          <img src="img/logo.svg"></img>
+        </div>
+        <div id="mobile-header-name">
+          <h1>Kelly Conrad</h1>
+          <h2>Performer</h2>
+        </div>
+      </div>
+      <div id="mobile-header-content">
+        <img id="mobile-profile-img" src="img/home-1-mobile.jpg" alt="Kelly Conrad | Performer">
+        <p id="index-photo-mobile">Photo: Harrison Scantling</p>
+        <button class="hamburger hamburger--squeeze navigation" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        <ul id="myDropdown" class="dropdown-content">
+          <li><a href="about#about">About</a></li>
+          <li><a href="media#photos">Media</a></li>
+          <li><a href="resume#resume">Résumé</a></li>
+          <li><a href="shows#shows">Shows</a></li>
+          <li><a href="instructor#instructor">Instructor</a></li>        
+          <li><a href="contact#contact">Contact</a></li>
+        </ul>
+        </button>
+      </div>
     </nav>
     <!-- Tablet Header -->
     <nav id="tablet-header">
-      <h1>Kelly Conrad</h1>
-      <h2>Performer</h2>
+      <div id="tablet-header-main">
+        <div id="tablet-header-logo">
+          <img src="img/logo.svg"></img>
+        </div>
+        <div id="tablet-header-name">
+          <h1>Kelly Conrad</h1>
+          <h2>Performer</h2>
+        </div>
+      </div>
       <ul class="flex-container1">
         <li><a href="about">About</a></li>
         <li><a href="media">Media</a></li>
@@ -73,13 +92,25 @@
     <!-- Desktop Header -->
     <nav id="desktop-header">
       <ul class="flex-container2">
-        <li class="box1"><a href="https://www.kjconrad.com"><h1>Kelly Conrad</h1><br><h2>Performer</h2></a></li>
+        <li class="box1">
+          <a href="https://www.kjconrad.com">
+            <div id="desktop-header-main">
+              <div id="desktop-header-logo">
+                <img src="img/logo.svg"></img>
+              </div>
+              <div id="desktop-header-name">
+                <h1>Kelly Conrad</h1>
+                <h2>Performer</h2>
+              </div>
+            </div> 
+          </a>
+        </li>
         <li class="box"><a href="about">About</a></li>
         <li class="box"><a href="media">Media</a></li>
         <li class="box"><a href="resume">Résumé</a></li>
         <li class="box"><a href="shows">Shows</a></li>
         <li class="box"><a href="instructor">Instructor</a></li>        
-        <li class="box"><a href="contact">Contact</a></li>
+        <li class="box last-box"><a href="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -88,25 +119,27 @@
     <!-- Desktop About Flex -->
     <section id="desktop-about-flex">
       <ul class="two-column-flex">
-        <li class="item item-1"><img src="img/kelly3.jpg" alt="Kelly Conrad | Performer"></li>
-        <li class="last item item-2">
+        <div class="item item-1">
+          <img src="img/kelly3.jpg" alt="Kelly Conrad | Performer">
+        </div>
+        <div class="last item item-2">
           <h3 id="about">About Me</h3>
           <p id="about-text">
-              Kelly is a Philadelphia based actor, comedian, and improv instructor. She is a military brat who was born in the Philippines and grew up in South Korea and Germany. She graduated in 2013 from Suffolk University in Boston where she studied Media Communication and Theater Arts. 
-              <br><br>
-              After graduating, Kelly completed Company One Theater’s Professional Development for Actors Program, taught by Victoria Marsh and Rosalind Clark-Thomas. She went on to perform in the Boston Actors Theater’s movement piece, <span class="italic">Dancing Wilde</span>, as well as TC Squared Theatre Company’s devised work, <span class="italic">The Great War Theatre Project</span>. She also plays the lead in short film, “Hero for Hire,” which was officially selected for the Independent Days International Film Fest and the Shahu International Short Film Festival. 
-              <br><br>
-              Kelly grew sick of Boston and moved to Philadelphia. 
-              <br><br>
-              In the summer of 2016, after visiting her folks in Germany, Kelly went straight from the Philadelphia International Airport to the Philly Improv Theater (PHIT) to audition for the newest house sketch team. After being cast as a performer on <span class="underline">The Decoy</span> (Philly Sketch Fest, Black Friday Comedy Marathon), Kelly went on to complete the improv curriculum at PHIT and was cast on improv house team, <span class="underline">Hooch</span> (We the People Improv Festival, Bechdel Test Fest), improv team <span class="underline">Not Yet Rated</span>, and POC Comedy Troupe, <span class="underline">NYTEShift</span> (Del Close Comedy Marathon, Black Friday Comedy Festival, We the People Improv Festival, Mad Ethnic Festival).
-              <br><br>
-              In the summer of 2017, Kelly was cast in the Philadelphia Premiere of Chicago based Physical Theater Company, Theater Unspeakable’s, <span class="italic">American Revolution</span>. In spring 2018, she joined the cast of Anti Gravity Performance Project’s, <span class="italic">Dear Diary LOL</span> for Ice Factory 25 at the New Ohio Theater in NYC. After a very successful run, they were invited back for an encore run a month later.
-              <br><br>
-              Kelly also performs in the band “Girl Poop,” which is comprised of four female Glitiods (glittery idiots), sharing their shames and pleasures with you via song, dance, and more.
-              <br><br>
-              Kelly continues to perform with <span class="underline">The Decoy</span>, <span class="underline">Hooch</span>, <span class="underline">NYTEShift</span>, and <span class="underline">Not Yet Rated</span>. Check out the <a href="https://kjconrad.com/shows" target="_blank"><span class="underline">Shows</span></a> page for, you guessed it, upcoming shows! You can also learn from Kelly, she is an improv instructor at the Philly Improv Theater for adult classes, as well as the Kids and Teens Program. Take a look at the <a href="https://kjconrad.com/instructor" target="_blank"><span class="underline">Instructor</span></a> page for upcoming classes, workshops and practice groups.
-            </p>
-        </li>
+            Kelly is a Philadelphia based actor, comedian, and improv instructor. She is a military brat who was born in the Philippines and grew up in South Korea and Germany. She graduated in 2013 from Suffolk University in Boston where she studied Media Communication and Theater Arts. 
+            <br><br>
+            After graduating, Kelly completed Company One Theater’s Professional Development for Actors Program, taught by Victoria Marsh and Rosalind Clark-Thomas. She went on to perform in the Boston Actors Theater’s movement piece, <span class="italic">Dancing Wilde</span>, as well as TC Squared Theatre Company’s devised work, <span class="italic">The Great War Theatre Project</span>. She also plays the lead in short film, “Hero for Hire,” which was officially selected for the Independent Days International Film Fest and the Shahu International Short Film Festival. 
+            <br><br>
+            Kelly grew sick of Boston and moved to Philadelphia. 
+            <br><br>
+            In the summer of 2016, after visiting her folks in Germany, Kelly went straight from the Philadelphia International Airport to the Philly Improv Theater (PHIT) to audition for the newest house sketch team. After being cast as a performer on The Decoy (Philly Sketch Fest, Black Friday Comedy Marathon), Kelly went on to complete the improv curriculum at PHIT and was cast on improv house team, Hooch (We the People Improv Festival, Bechdel Test Fest), improv team Not Yet Rated, and POC Comedy Troupe NYTEShift (Del Close Comedy Marathon, Black Friday Comedy Festival, We the People Improv Festival, Mad Ethnic Festival).
+            <br><br>
+            In the summer of 2017, Kelly was cast in the Philadelphia Premiere of Chicago based Physical Theater Company, Theater Unspeakable’s, <span class="italic">American Revolution</span>. In spring 2018, she joined the cast of Anti Gravity Performance Project’s, <span class="italic">Dear Diary LOL</span> for Ice Factory 25 at the New Ohio Theater in NYC. After a very successful run, they were invited back for an encore run a month later.
+            <br><br>
+            Kelly also performs in the band Girl Poop which is comprised of four female Glitiots (glittery idiots), sharing their shames and pleasures with you via song, dance, and more.
+            <br><br>
+            Kelly continues to perform with The Decoy, Hooch, NYTEShift, and Not Yet Rated. Check out the <a href="https://kjconrad.com/shows" target="_blank">Shows</a> page for, you guessed it, upcoming shows! You can also learn from Kelly, she is an improv instructor at the Philly Improv Theater for adult classes, as well as the Kids and Teens Program. Take a look at the <a href="https://kjconrad.com/instructor" target="_blank">Instructor</a> page for upcoming classes, workshops and practice groups.
+          </p>
+        </div>
       </ul>
     </section>
   </main>

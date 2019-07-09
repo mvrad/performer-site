@@ -9,22 +9,42 @@ $(() => {
   });
   // Photo slider
   $(".slider-nav").slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 5,
+    slidesToScroll: 1,
     asNavFor: ".slider-for",
     focusOnSelect: true,
     autoplay: true,
     arrows: true,
-    centerMode: true,
-    centerPadding: '100px',
     infinite: true,
     autoplaySpeed: 3000,
     dots: true,
+    centerMode: true,
+    centerPadding: "60px",
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
-          dots: false
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          dots: false,
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
         }
       }
     ],
