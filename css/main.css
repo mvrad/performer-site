@@ -855,7 +855,7 @@ Breakpoints
     max-width: 800px;
   }
 
-  #about-text {
+  #about-text, #instructor-text {
     margin-left: 40px;
   }
 
