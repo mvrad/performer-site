@@ -456,7 +456,18 @@ Main
 .video-container figcaption {
   display: table-caption;
   caption-side: bottom;
+}
+
+.margin-bottom {
   margin-bottom: 40px;
+}
+
+.margin-bottom_lg {
+  margin-bottom: 200px;
+}
+
+#last-figcaption {
+  margin-bottom: 0;
 }
 
 .video-container figcaption h3 {
