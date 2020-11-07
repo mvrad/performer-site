@@ -327,9 +327,13 @@ Dropdown Menu
   display: block;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:active {
   font-weight: 700;
   color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*==============================================================================
