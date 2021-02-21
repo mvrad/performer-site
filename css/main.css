@@ -332,7 +332,7 @@ a:link, a:visited, a:active {
   color: #000;
 }
 
-a:hover {
+.box:hover {
   text-decoration: underline;
 }
 
